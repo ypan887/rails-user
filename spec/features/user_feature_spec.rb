@@ -56,11 +56,11 @@ RSpec.describe "User", type: :feature do
         end
       end
 
-      it "should create a new user" do
+      it "create a new user" do
         expect(click_button("Start Analyzing »")).to change(User, :count).by(1)
       end
       
-      it "it redirect to welcome page with message" do
+      it "redirect to welcome page with message" do
         click_button("Start Analyzing »")
         expect(page).to have_http_status(:success)
         expect(page).to have_selector('alert alert-success', text: "welcome")
