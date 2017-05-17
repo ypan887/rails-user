@@ -1,3 +1,7 @@
+## Intro
+
+This repo if for pai-test. 
+
 ## To Start
 
 1. git clone to local dir
